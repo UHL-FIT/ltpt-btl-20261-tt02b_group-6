@@ -20,30 +20,20 @@ QLTC là ứng dụng quản lý thú cưng bằng Python và Tkinter. Ứng d�
 
 1. Mở terminal và chuyển đến thư mục dự án:
 
-```powershell
-cd C:\Users\yughi\Desktop\QLTC
-```
-
 2. Tạo và kích hoạt môi trường ảo (nếu muốn):
 
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-```
+python -m venv venv.\venv\Scripts\Activate.ps1
 
 3. Cài đặt các thư viện:
 
-```powershell
 pip install -r requirements.txt
-```
 
 ## 4. Chạy ứng dụng
 
 Trong thư mục dự án, chạy:
 
-```powershell
 python main.py
-```
+
 
 Ứng dụng sẽ mở cửa sổ GUI và tự động tạo `data/pets.csv` và `data/weights.csv` nếu chúng chưa tồn tại.
 
