@@ -95,9 +95,3 @@ python main.py
 - Nếu muốn sửa dữ liệu thủ công, hãy sao lưu các tệp CSV trước.
 - `tkinter` thường đã có sẵn trên Windows; nếu không, cài đặt Python phiên bản có hỗ trợ GUI.
 
-## 8. Ghi chú thêm
-
-Ứng dụng hiện tại hỗ trợ tính năng:
-- Hiển thị cảnh báo tiêm phòng sắp tới/hết hạn.
-- Điều chỉnh kích thước bảng và giao diện tự co giãn.
-- Lưu trữ cân nặng cuối cùng và sử dụng nó để tìm kiếm.
