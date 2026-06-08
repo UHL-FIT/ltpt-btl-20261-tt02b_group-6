@@ -17,16 +17,20 @@ QLTC là ứng dụng quản lý thú cưng bằng Python và Tkinter. Ứng d�
   - `tkinter` (thường đã có sẵn trên Windows)
 
 ## 3. Cài đặt
-
 1. Mở terminal và chuyển đến thư mục dự án:
 
-2. Tạo và kích hoạt môi trường ảo (nếu muốn):
+2. Tạo và kích hoạt môi trường ảo:
 
-python -m venv venv.\venv\Scripts\Activate.ps1
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
 
 3. Cài đặt các thư viện:
 
+```powershell
 pip install -r requirements.txt
+```
 
 ## 4. Chạy ứng dụng
 
