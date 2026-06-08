@@ -32,8 +32,9 @@ pip install -r requirements.txt
 
 Trong thư mục dự án, chạy:
 
+```powershell
 python main.py
-
+```
 
 Ứng dụng sẽ mở cửa sổ GUI và tự động tạo `data/pets.csv` và `data/weights.csv` nếu chúng chưa tồn tại.
 
