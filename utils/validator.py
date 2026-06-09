@@ -10,18 +10,20 @@ def validate_date(date_str):
 
         return True
 
-    except:
+    except Exception as exc:
 
         return False
 
 
 def validate_name(name):
-
-    if not name or not name.strip():
-        return False
-
-    for ch in name.strip():
-        if not (ch.isalpha() or ch.isspace()):
+    try:
+        if not name or not name.strip():
             return False
 
-    return True
+        for ch in name.strip():
+            if not (ch.isalpha() or ch.isspace()):
+                return False
+
+        return True
+    except Exception as exc:
+        return False
