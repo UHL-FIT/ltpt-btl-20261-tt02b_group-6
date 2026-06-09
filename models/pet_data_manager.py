@@ -296,7 +296,7 @@ class PetDataManager:
 
         today = pd.to_datetime(
             'today'
-        )
+        ).normalize()
 
         pets_df['DOB'] = pd.to_datetime(
             pets_df['DOB'],
@@ -316,7 +316,7 @@ class PetDataManager:
         ] = pd.to_datetime(
             pets_df['NextVaccinationDate'],
             errors='coerce'
-        )
+        ).dt.normalize()
 
         warnings = []
 
@@ -332,11 +332,16 @@ class PetDataManager:
                 ).days
 
                 if 0 <= days_until <= 14:
-
-                    warnings.append(
-                        f"{row['Name']} "
-                        f"(Còn {days_until} ngày)"
-                    )
+                    if days_until == 0:
+                        warnings.append(
+                            f"{row['Name']} "
+                            f"(Đã đến ngày tiêm)"
+                        )
+                    else:
+                        warnings.append(
+                            f"{row['Name']} "
+                            f"(Còn {days_until} ngày)"
+                        )
 
                 elif days_until < 0:
 
